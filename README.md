@@ -1,3 +1,9 @@
+# FreeBSD compilation
+
+```
+CGO_ENABLED=0 go build -ldflags="-extldflags=-static -X main.buildVersion=v1.7.0 -X 'main.buildTime=2022-11-20-16:56 UTC'" -o bin/virtual-kubelet ./cmd/virtual-kubelet
+```
+
 # Virtual Kubelet
 
 Virtual Kubelet is an open source [Kubernetes kubelet](https://kubernetes.io/docs/reference/generated/kubelet/)
